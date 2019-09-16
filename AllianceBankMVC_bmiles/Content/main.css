@@ -1,0 +1,111 @@
+﻿.my-primary {
+    color: white;
+    background-color: rgb(97, 153, 178);
+}
+
+    .my-primary a {
+        color: white;
+    }
+
+        .my-primary a:hover, .my-primary a:focus {
+            color: rgb(255, 251, 157);
+        }
+
+    .my-primary h1,
+    .my-primary h2,
+    .my-primary h3,
+    .my-primary h4,
+    .my-primary h5,
+    .my-primary h6 {
+        color: rgb(178, 96, 107);
+    }
+
+.my-secondary {
+    color: rgb(255,251,157);
+    background-color: rgb(178,96,107);
+}
+
+    .my-secondary a {
+        color: rgb(97, 153, 178)
+    }
+
+        .my-secondary a:hover a:focus {
+            color: white;
+        }
+
+.bg-light {
+    color: rgb(97, 153, 178)
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+    .caption p {
+        font-size: 18px;
+        color: rgba(255, 255, 255, .9);
+    }
+
+    .caption span {
+        padding: 10px;
+        background-color: rgba(97, 153, 178, .8);
+        border-radius: 10px
+    }
+
+.eho-image, .fdic-image {
+    height: 3%;
+    width: 3%;
+}
+
+.footer-copyright {
+    text-transform: uppercase;
+}
+
+    .footer-copyright a {
+        color: white;
+    }
+
+        .footer-copyright a:hover, .footer-copyright a:focus {
+            color: rgb(255,251,157);
+            text-decoration: none;
+        }
+
+footer {
+    padding-top: 20px;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+main {
+    max-width: 1420px;
+    width: 85%;
+    margin: auto;
+    box-shadow: 3px 3px 5px #000000;
+}
+
+/*Tablet*/
+
+@media only screen and (max-width: 1200px) {
+
+    main {
+        width: auto;
+    }
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 724px) {
+
+    main {
+        width: 450px;
+    }
+}

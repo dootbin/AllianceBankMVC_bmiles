@@ -1,0 +1,32 @@
+﻿@model IEnumerable<AllianceBankMVC_bmiles.Models.InterestRate>
+
+@{
+    ViewBag.Title = "Rates";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RateDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rate)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RateDesc)
+                </td>
+                <td>
+                   % @Html.DisplayFor(modelItem => item.Rate)
+                </td>
+            </tr>
+        }
+
+    </table>
+
